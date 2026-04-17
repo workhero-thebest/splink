@@ -1,0 +1,30 @@
+{
+  "name": "splink-mcp-server-poc",
+  "version": "0.1.0",
+  "description": "SPLink MCP Server PoC - Payment integration for AI agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "inspect": "npx @anthropic-ai/mcp-inspector dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "payment",
+    "ai-agent",
+    "splink"
+  ],
+  "author": "SPLink",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
